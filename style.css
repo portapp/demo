@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif
+}
+
+iframe {
+    z-index: 10000;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 70px;
+    border-style: none;
+}
+
+.image-lac {
+    height: 400px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0)), url("images/lac.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 70px;
+}
+  
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+pages {
+    background-color: white;
+    z-index: 100;
+    position: absolute;
+    top: 470px;
+    width: 100%;
+}
+
+page {
+    display: flex;
+    align-items: center;
+
+    transition: background-color, margin 0.5s;
+    position: relative;
+    padding: 20px 30px;
+    width: auto;
+    margin: 5px;
+    border-radius: 10px;
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+page:hover {
+    transition: background-color, margin 0.5s;
+    margin: 5px 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgb(255, 255, 255);
+}
+
+page a {
+    transition: background-color 0.2s;
+    position: relative;
+
+    width: auto;
+    padding: 20px 30px;
+    margin: 30px;
+    border-radius: 10px;
+
+    font-size: 20px;
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+page a:hover {
+    transition: background-color 0.2s;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+page img {
+    height: 200px;
+    border-radius: 20px;
+}
