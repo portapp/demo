@@ -1,3 +1,8 @@
+:root {
+    --button: rgb(236, 236, 236);
+    --font: black
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -47,7 +52,7 @@ page {
     display: flex;
     align-items: center;
 
-    transition: background-color, margin 0.5s;
+    transition: margin 0.2s;
     position: relative;
     padding: 20px 30px;
     width: auto;
@@ -59,10 +64,10 @@ page {
 }
 
 page:hover {
-    transition: background-color, margin 0.5s;
+    transition: margin 0.2s;
     margin: 5px 20px;
-    background-color: rgba(0, 0, 0, 0.1);
-    color: rgb(255, 255, 255);
+    --button: black;
+    --font: white;
 }
 
 page a {
@@ -76,14 +81,8 @@ page a {
 
     font-size: 20px;
 
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-}
-
-page a:hover {
-    transition: background-color 0.2s;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    background-color: var(--button);
+    color: var(--font);
 }
 
 page img {
