@@ -2,7 +2,7 @@
     "cells": [
         {
             "title":"Application développée par Clément Gauthier",
-            "subtitle":"Élève de 5e secondaire du collège.",
+            "subtitle":"Membre du Domaine du Côté Azur",
             "image":"ℹ️",
             "notification":true
         },{
@@ -13,9 +13,9 @@
             "openURL":true
         },{
             "title":"Signaler un bug",
-            "subtitle":"cgauthier@collegemont-royal.qc.ca",
+            "subtitle":"clement.gauthier@hotmail.com",
             "image":"📨",
-            "link":"mailto:cgauthier@collegemont-royal.qc.ca?subject=Probl%C3%A8me%20dans%20l%27application%20CMR",
+            "link":"mailto:clement.gauthier@hotmail.com?subject=Probl%C3%A8me%20dans%20l%27application%20Portapp",
             "openURL":true
         }
     ]
