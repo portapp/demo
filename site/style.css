@@ -1,0 +1,96 @@
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding-top: 15px;
+}
+
+cell {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    
+    height: 80px;
+    margin: 0px 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+
+    font-size: 17px;
+}
+
+.notification {
+    background-color: rgba(160, 160, 160, 0.15);
+    height: 100px;
+    
+}
+
+.mouseOver.notification {
+    transition: all 0.2s;
+    background-color: rgba(160, 160, 160, 0.215);
+    padding-left: 20px;
+    height: 100px;
+}
+
+.mouseOut.notification {
+    transition: all 0.2s;
+    background-color: rgba(160, 160, 160, 0.15);
+    padding-left: 10px;
+    height: 100px;
+}
+
+.mouseOver {
+    transition: all 0.2s;
+    background-color: rgba(160, 160, 160, 0.215);
+    padding-left: 20px;
+    height: 100px;
+}
+
+.mouseOut {
+    transition: all 0.2s;
+    background-color: rgba(0, 0, 0, 0);
+    padding-left: 10px;
+    height: 80px;
+}
+
+.transitionLeft {
+    transition: all 0.3s;
+    transform: translateX(-20%);
+    opacity: 0%;
+}
+
+.fadeIn {
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0%; left: 10%;}
+    100% {opacity: 100%; left: 0px;}
+}
+
+emoji {
+    font-size: 50px;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 10px;
+}
+
+cell-title {
+    font-size: 17px;
+}
+
+cell-subtitle {
+    font-size: 12px;
+    color: rgb(141, 141, 141);
+    padding: 5px 0px;
+}
