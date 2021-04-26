@@ -1,0 +1,22 @@
+{
+    "cells": [
+        {
+            "title":"Application développée par Clément Gauthier",
+            "subtitle":"Élève de 5e secondaire du collège.",
+            "image":"ℹ️",
+            "notification":true
+        },{
+            "title":"Allez voir mes autres applications !",
+            "subtitle":"Ouvrir l'App Store",
+            "image":"appstore",
+            "link":"https://apps.apple.com/developer/stephane-gauthier/id1489666753",
+            "openURL":true
+        },{
+            "title":"Signaler un bug",
+            "subtitle":"cgauthier@collegemont-royal.qc.ca",
+            "image":"📨",
+            "link":"mailto:cgauthier@collegemont-royal.qc.ca?subject=Probl%C3%A8me%20dans%20l%27application%20CMR",
+            "openURL":true
+        }
+    ]
+}

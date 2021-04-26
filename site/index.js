@@ -101,7 +101,7 @@ function GenerateHTMLCell(title, subtitle, image, i, cellClass) {
         return `<cell id = ${i} class="${cellClass}"><img src="${image}" height="80px"/><description><cell-title>${title}</cell-title><cell-subtitle>${subtitle}</cell-subtitle></description></cell>`
     } else if (isEmoji(image) != true) {
         // IMAGE IS IMAGE NAME
-        return `<cell id = ${i} class="${cellClass}"><img src="https://collegemont-royal.github.io/files/images/${image}.png" height="80px"/><description><cell-title>${title}</cell-title><cell-subtitle>${subtitle}</cell-subtitle></description></cell>`
+        return `<cell id = ${i} class="${cellClass}"><img src="../files/images/${image}.png" height="80px"/><description><cell-title>${title}</cell-title><cell-subtitle>${subtitle}</cell-subtitle></description></cell>`
     } else {
         // IMAGE IS EMOJI
         return `<cell id = ${i} class="${cellClass}"><emoji>${image}</emoji><description><cell-title>${title}</cell-title><cell-subtitle>${subtitle}</cell-subtitle></description></cell>`
@@ -127,7 +127,7 @@ function getUrl() {
     } else if (src != null) {
         return src;
     } else {
-        return 'https://collegemont-royal.github.io/files/cells.json';
+        return '../files/cells.json';
     }
 }
 
