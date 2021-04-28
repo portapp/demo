@@ -1,5 +1,6 @@
 {
-    "title":"Côté Azur",
-    "image":"🏖",
-    "link":"https://coteazur.portapp.ca/files/contenu.json"
+    "title":"Démonstration",
+    "subtitle":"Démonstration de l'application PortApp.",
+    "image":"🧭",
+    "link":"https://demo.portapp.ca/files/contenu.json"
 }
