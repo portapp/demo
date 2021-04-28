@@ -2,9 +2,9 @@
     "version":"1.0",
     "cells": [
         {
-            "title":"Carte du territoire",
-            "image":"🗺",
-            "link":"https://coteazur.portapp.ca/files/carte.pdf"
+            "title":"Visualisation de PDF",
+            "image":"📄",
+            "link":"https://demo.portapp.ca/files/dummy.pdf"
         },{
             "title":"Tests d'eau",
             "subtitle":"Résultats des tests d'eau des deux lacs.",
