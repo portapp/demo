@@ -127,7 +127,7 @@ function getUrl() {
     } else if (src != null) {
         return src;
     } else {
-        return '../files/cells.json';
+        return '../files/contenu.json';
     }
 }
 
