@@ -2,36 +2,18 @@
     "version":"1.0",
     "cells": [
         {
-            "title":"Calendrier",
-            "subtitle":"Calendrier scolaire 2020-2021",
-            "image":"Calendrier",
-            "link":"https://collegemont-royal.github.io/files/ecole/calendrier2021.pdf"
+            "title":"Carte du territoire",
+            "image":"🗺",
+            "link":"https://coteazur.portapp.ca/files/carte.pdf"
         },{
-            "title":"Code de vie",
-            "subtitle":"Code de vie 2020-2021",
-            "image":"Codedevie",
+            "title":"Tests d'eau",
+            "subtitle":"Résultats des tests d'eau des deux lacs.",
+            "image":"💧",
             "link":"https://collegemont-royal.github.io/files/ecole/cdv2021.pdf"
         },{
-            "title":"Cafétéria",
-            "subtitle":"Menu de la cafétéria 2020-2021",
-            "image":"fork",
-            "link":"https://collegemont-royal.github.io/files/ecole/menuCafeteria.pdf"
-        },{
-            "title":"Site du Collège",
-            "subtitle":"Site web officiel du Collège Mont-Royal",
-            "image":"lien",
-            "link":"https://collegemont-royal.qc.ca/"
-        },{
-            "title":"Journal Étudiant",
-            "subtitle":"Édition #6 sur le mois de la lecture disponible !",
-            "image":"🗞",
-            "newPage":true,
-            "link":"https://collegemont-royal.github.io/files/journal/contenu.json",
-            "UUID":"bd94941d-14f2-4397-9b72-df090889c438"
-        },{
-            "title":"Bibliothèque",
-            "subtitle":"Suggestions de lecture, critiques littéraires et activités",
-            "image":"bibliotheque",
+            "title":"Section administration",
+            "subtitle":"Résumés des réunions, nécéssite un mot de passe.",
+            "image":"🔒",
             "newPage":true,
             "link":"https://collegemont-royal.github.io/files/bibliotheque/contenu.json"
         }
