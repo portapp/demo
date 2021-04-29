@@ -6,16 +6,16 @@
             "image":"📄",
             "link":"https://demo.portapp.ca/files/dummy.pdf"
         },{
-            "title":"Tests d'eau",
-            "subtitle":"Résultats des tests d'eau des deux lacs.",
-            "image":"💧",
-            "link":"https://collegemont-royal.github.io/files/ecole/cdv2021.pdf"
+            "title":"Consultation de site web",
+            "subtitle":"stackoverflow.com",
+            "image":"🧭",
+            "link":"https://stackoverflow.com"
         },{
-            "title":"Section administration",
-            "subtitle":"Résumés des réunions, nécéssite un mot de passe.",
-            "image":"🔒",
-            "newPage":true,
-            "link":"https://collegemont-royal.github.io/files/bibliotheque/contenu.json"
+            "title":"Ouvrir dans...",
+            "subtitle":"Ouvrir l´application mail",
+            "image":"📧",
+            "openURL":true,
+            "link":"mailto:"
         }
     ]
 }
