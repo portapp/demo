@@ -19,6 +19,11 @@
             "image":"🗓",
             "link":"https://demo.portapp.ca/files/calendrier.pdf"
         },{
+            "title":"Wikipedia - iOS",
+            "subtitle":"Consultez la page wikipédia d'iOS",
+            "image":"📄",
+            "link":"https://demo.portapp.ca/files/ios.pdf"
+        },{
             "title":"Bibliothèque",
             "subtitle":"Consultez les nouveautés de la bibliothèque et des suggestions de lecture ici.",
             "newPage":true,
