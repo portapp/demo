@@ -2,20 +2,28 @@
     "version":"1.0",
     "cells": [
         {
-            "title":"Visualisation de PDF",
-            "image":"📄",
+            "title":"Rappel d'inscription",
+            "subtitle":"La date limite pour s'inscrire est le 4 mai.",
+            "image":"🔖",
+            "notification":true,
+            "openURL":true,
+            "link":"https://docs.google.com/forms/"
+        },{
+            "title":"Intranet",
+            "subtitle":"Cliquez ici pour accéder à l'intranet.",
+            "image":"📡",
             "link":"https://demo.portapp.ca/files/dummy.pdf"
         },{
-            "title":"Consultation de site web",
-            "subtitle":"stackoverflow.com",
-            "image":"🧭",
-            "link":"https://stackoverflow.com"
+            "title":"Calendrier des réunions",
+            "subtitle":"Cliquez ici pour consulter le calendrier des réunions du mois de mars.",
+            "image":"🗓",
+            "link":"https://demo.portapp.ca/files/calendrier.pdf"
         },{
-            "title":"Ouvrir dans...",
-            "subtitle":"Ouvrir l´application mail",
-            "image":"📧",
-            "openURL":true,
-            "link":"mailto:"
+            "title":"Bibliothèque",
+            "subtitle":"Consultez les nouveautés de la bibliothèque et des suggestions de lecture ici.",
+            "newPage":true,
+            "image":"📚",
+            "link":"https://demo.portapp.ca/files/suggestions.json"
         }
     ]
 }
