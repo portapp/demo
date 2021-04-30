@@ -2,9 +2,9 @@
     "version":"1.0",
     "cells": [
         {
-            "title":"Rappel d'inscription",
-            "subtitle":"La date limite pour s'inscrire est le 4 mai.",
-            "image":"🔖",
+            "title":"Rappel pour l'inscription",
+            "subtitle":"La date limite pour s'inscrire est le 4 mai. Cliquez ici pour vous inscrire",
+            "image":"📒",
             "notification":true,
             "openURL":true,
             "link":"https://docs.google.com/forms/"
