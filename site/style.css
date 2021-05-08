@@ -3,7 +3,23 @@ body {
     color: rgb(0, 0, 0);
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     margin: 0;
-    padding-top: 15px;
+}
+
+.top {
+    position: relative;
+    width: 100%;
+
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    
+    font-size: 30px;
+    font-weight: 500;
+    opacity: 70%;
+}
+
+.tableView {
+    padding-top: 10px;
 }
 
 cell {

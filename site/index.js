@@ -3,13 +3,15 @@ let str = get(link)
 let cells = JSON.parse(str).cells
 let slides = false;
 loadTableView();
-
+setTopBarTitle(sessionStorage.getItem('title'))
 setDarkMode();
 
 // EVENTS
 
 window.addEventListener('popstate', e => {
     parseCells(e.state)
+    setTopBarTitle(e.title)
+    sessionStorage.setItem('title', e.title);
 })
 
 function addClickEvent(i) {
@@ -23,8 +25,13 @@ function addNewPageEvent(i) {
     var element = document.getElementById(i)
     element.onclick = function() {
         history.pushState(cells[i].link, cells[i].title);
+        sessionStorage.setItem('title', cells[i].title);
         slideLeft()
         slides = true;
+        
+        document.title = cells[i].title
+        setTopBarTitle(cells[i].title)
+
         setTimeout(function() {
             parseCells(cells[i].link)
         }, 300)
@@ -53,13 +60,13 @@ function parseCells(url) {
 }
 
 function loadTableView() {
-    document.body.innerHTML = ""
+    document.getElementsByClassName("tableView")[0].innerHTML = ""
     for (let i = 0; i < cells.length; i++) {
         let classe = "mouseOut"
         if (cells[i].notification) {
             classe = classe + ", notification"
         }
-        document.body.insertAdjacentHTML("beforeend", GenerateHTMLCell(cells[i].title, cells[i].subtitle, cells[i].image, i, classe));
+        document.getElementsByClassName("tableView")[0].insertAdjacentHTML("beforeend", GenerateHTMLCell(cells[i].title, cells[i].subtitle, cells[i].image, i, classe));
         addHoverEvent(i);
 
         if (cells[i].newPage) {
@@ -69,25 +76,6 @@ function loadTableView() {
         }
     }
     fadeIn();
-}
-
-function slideLeft() {
-    var elements = document.getElementsByTagName("cell")
-    for (let i = 0; i < elements.length; i++) {
-        elements[i].classList.remove("transitionLeft", "mouseOver", "mouseOut");
-        elements[i].classList.add("transitionLeft", "mouseOut");
-    }
-}
-
-function fadeIn() {
-    if (slides) {
-        slides = false;
-        var elements = document.getElementsByTagName("cell")
-        for (let i = 0; i < elements.length; i++) {
-            elements[i].classList.remove("fadeIn");
-            elements[i].classList.add("fadeIn");
-        }
-    }
 }
 
 function GenerateHTMLCell(title, subtitle, image, i, cellClass) {
@@ -110,10 +98,42 @@ function GenerateHTMLCell(title, subtitle, image, i, cellClass) {
 
 // UI
 
+function setTopBarTitle(title) {
+    if (title != null && title != 'undefined') {
+        document.getElementsByClassName("top")[0].textContent = title
+        document.title = title
+    } else {
+        link = '../files/head.json'
+        str = get(link)
+        string = JSON.parse(str).title
+        setTopBarTitle(string)
+        document.title = string
+    }
+}
+
 function setDarkMode() {
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.style.backgroundColor = "black";
         document.body.style.color = "white";
+    }
+}
+
+function slideLeft() {
+    var elements = document.getElementsByTagName("cell")
+    for (let i = 0; i < elements.length; i++) {
+        elements[i].classList.remove("transitionLeft", "mouseOver", "mouseOut");
+        elements[i].classList.add("transitionLeft", "mouseOut");
+    }
+}
+
+function fadeIn() {
+    if (slides) {
+        slides = false;
+        var elements = document.getElementsByTagName("cell")
+        for (let i = 0; i < elements.length; i++) {
+            elements[i].classList.remove("fadeIn");
+            elements[i].classList.add("fadeIn");
+        }
     }
 }
 
